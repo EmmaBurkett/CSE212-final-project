@@ -2,11 +2,11 @@
 ## Python Fundamentals Tutorial
 
 ### <span style="color:Pink"><b>I. WELCOME </span>
-* Introdution
+* Introduction
 * Contact
 
 #### [<span style="color:Pink"><b>II. QUEUE </span>](1-queue.md)
-* Introdution
+* Introduction
 * FIFO
 * Practical Application
 * Example
@@ -14,7 +14,7 @@
 * Problem to Solve
 
 #### [<span style="color:Pink"><b>III. SET </span>](2-set.md)
-* Introdution
+* Introduction
 * Duplication restraints
 * Hashing
 * Practical Application
@@ -23,12 +23,12 @@
 * Problem to Solve
 
 #### [<span style="color:Pink"><b>IV. TREES </span>](3-tree.md)
-* Introdution
+* Introduction
 * Search Logic
     * Recursion
 * Balanced binary search tree
 * Example
-    * A tree has a few nodes which have numbers that corrispond to what an officer should do in an event. 
+    * A tree has a few nodes which have numbers that correspond to what an officer should do in an event. 
         * Find a value in the binary search tree and run it's execute method
 * Problem to Solve
 
