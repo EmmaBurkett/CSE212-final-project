@@ -1,7 +1,6 @@
 # Python Data Structures Tutorial - Outline
-
 ## Python Fundamentals Tutorial
----------------------------------
+
 ### <span style="color:Pink"><b>I. WELCOME </span>
 * Introdution
 * Contact
