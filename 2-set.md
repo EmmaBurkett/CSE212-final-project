@@ -9,7 +9,7 @@ Note that the index matches the value of the element.
 ### Example:
 ``` python
 array = [1,4,3]
-my_set = [None, 1, None, 3, 4,]
+my_set = [None, 1, None, 3, 4,] # Sets can be called a sparse list because parts of the set are not always filled.
 ```
 
 ### Advantages
@@ -27,7 +27,9 @@ for x in my_set:
 print(add)
 ```
 
-### Add Hashing here
+### Hashing
+Sometimes we want to store things in a set that are not numberical, like
+a string. We can do this by hashing it. The operator hash("value") will convert the string into an integer so that it can be stored in the proper location in the set. The integer assigned to the first hash is random and the subsequent hashes remain consistant with the first hash. 
 
 ## Practical Application
 Sets can be used to verify uniquness which can be useful if you have a 
