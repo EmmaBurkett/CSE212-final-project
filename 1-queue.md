@@ -120,12 +120,12 @@ performance of O(1). The dequeue_dice method removes dice from the
 beginning of the array - which is the definition of a queue, first in;
 first out.
 
-## [Coding Challenge](CSE212-final-project\coding_challenges\dice_queue.py): 
+## [Coding Challenge](https://github.com/EmmaBurkett/CSE212-final-project/blob/main/coding_challenges/dice_queue.py): 
 For an array dequeuing an element is an O(n) operation, rather slow! 
 This same program can be recreated with a linked list which has O(1) 
 performance operations for dequeue and enqueue. 
 
 Your challenge is to alter the enqueue_dice and dequeue_dice methods to use a linked list.
 
-#### [Solution](CSE212-final-project\coding_challenges\Answers\dice_queue_answer.py)
+#### [Solution](https://github.com/EmmaBurkett/CSE212-final-project/blob/main/coding_challenges/Answers/dice_queue_answer.py)
 
