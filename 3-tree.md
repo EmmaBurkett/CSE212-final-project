@@ -2,7 +2,7 @@
 ## What is it?
 This is a tree:
 
-![My image file](hidden_files\Capture.PNG)
+![My image file](https://github.com/EmmaBurkett/CSE212-final-project/blob/main/hidden_files/Capture.PNG)
 
 A tree is connected like a linked list, except each node has three nodes attached to it unless it's the head or one of the tails. On each node there is a left and a right, the left stores a node with a number lower than the current node and the right stores a node with a number higher than the current node.
 
