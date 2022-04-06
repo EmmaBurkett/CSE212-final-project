@@ -164,7 +164,7 @@ to check the dice for uniqueness in O(1) time. This is a huge advantage over
 arrays as ``` If die in array ``` is O(n) time. 
 
 
-## [Coding Challenge](CSE212-final-project\coding_challenges\dice_set.py): 
+## [Coding Challenge](https://github.com/EmmaBurkett/CSE212-final-project/blob/main/coding_challenges/dice_set.py): 
 Right now the check_uniqueness method gives a point for every additional
 die with the same number - so if you rolled four 5's it would award the
 user with 3 points. Alter the check_uniqueness method so it awards one point
@@ -172,6 +172,6 @@ for each pair of duplicate dice. Ex. if you rolled four 5's it would
 give the user 2 points. 
 
 You cannot use a counter to solve this problem. 
-#### [Solution](CSE212-final-project\coding_challenges\Answers\dice_set_answer.py)
+#### [Solution](https://github.com/EmmaBurkett/CSE212-final-project/blob/main/coding_challenges/Answers/dice_set_answer.py)
 
 
