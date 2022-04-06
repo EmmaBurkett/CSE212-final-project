@@ -19,7 +19,7 @@ the set. This can be an advantage because we can use it to check for
 uniquness.
 
 ### Iterate through a set
-You can't. But you can use a foreach loop to loop through a set:
+You can't iterate through a set. But you can use a foreach loop to loop through a set:
 ```python
 add = 0
 for x in my_set:
@@ -27,7 +27,7 @@ for x in my_set:
 print(add)
 ```
 
-### Add Hasing here
+### Add Hashing here
 
 ## Practical Application
 Sets can be used to verify uniquness which can be useful if you have a 
@@ -50,7 +50,7 @@ size()       | Returns the number of items in the set | length = len(my_set) | O
 In the 30's dice game if the player rolls two of the same number they
 get a point. 
 
-Using the previous tutorial's code we have added a new method: check _uniqueness
+Using the queue tutorial's code we have added a new method: check _uniqueness
 
 ``` python
 import random
@@ -164,8 +164,14 @@ to check the dice for uniqueness in O(1) time. This is a huge advantage over
 arrays as ``` If die in array ``` is O(n) time. 
 
 
-## Coding Challenge: 
-Alter the check_uniqueness method to ingnore a third or fourth duplicate dice
-by using chaining. 
+## [Coding Challenge](CSE212-final-project\coding_challenges\dice_set.py): 
+Right now the check_uniqueness method gives a point for every additional
+die with the same number - so if you rolled four 5's it would award the
+user with 3 points. Alter the check_uniqueness method so it awards one point
+for each pair of duplicate dice. Ex. if you rolled four 5's it would 
+give the user 2 points. 
+
+You cannot use a counter to solve this problem. 
+#### [Solution](CSE212-final-project\coding_challenges\Answers\dice_set_answer.py)
 
 
