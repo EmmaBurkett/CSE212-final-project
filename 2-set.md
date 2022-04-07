@@ -17,10 +17,10 @@ my_set = [None, 1, None, 3, 4,]
 Note in the example above that a set only has one index equal to four
 meaning that we can't have another four in our set without working around
 the set. This can be an advantage because we can use it to check for 
-uniquness.
+uniqueness.
 
 ### Iterate through a set
-You can't iterate through a set. But you can use a foreach loop to loop through a set:
+You can't iterate through a set. But you can use a FOREACH loop to loop through a set:
 ```python
 add = 0
 for x in my_set:
@@ -30,10 +30,10 @@ print(add)
 
 ### Hashing
 Sometimes we want to store things in a set that are not numerical, like
-a string. We can do this by hashing it. The operator hash("value") will convert the string into an integer and store the string in the location of the returned integer. The integer assigned to the first hash is random and subsequent hashes remain consistant with the first hash. 
+a string. We can do this by hashing it. The operator hash("value") will convert the string into an integer and store the string in the location of the returned integer. The integer assigned to the first hash is random and subsequent hashes remain consistent with the first hash. 
 
 ## Practical Application
-Sets can be used to verify uniquness which can be useful if you have a 
+Sets can be used to verify uniqueness which can be useful if you have a 
 list of employees and you need to make sure that their ID numbers are 
 unique from everyone else's numbers. Sets can also be used if you need
 to be able to find values quickly. To check if a set has a value is O(1)
@@ -50,10 +50,10 @@ member(value)        | Determines if value is in the set | if value in my_set | 
 size()       | Returns the number of items in the set | length = len(my_set) | O(1)
 
 ## Dice Game
-In the 30's Dice Game if the player rolls two of the same number they
+In the 30's Dice Game if the player rolls two of the same number, they
 get a point. 
 
-Using the queue tutorial's code we have added a new method: check _uniqueness
+Using the queue tutorial's code, we have added a new method: check _uniqueness()
 
 ``` python
 import random
@@ -162,19 +162,19 @@ game = DiceGame()
 game.start_game()
 ```
 ## Coding with sets
-In the check_uniqueness method we turned an array into a set. This helped us
+In the check_uniqueness() method we turned an array into a set. This helped us
 to check the dice for uniqueness in O(1) time. This is a huge advantage over
-arrays as ``` If die in array ``` is O(n) time. 
-
+arrays as ``` if die in array ``` is O(n) time. 
 
 ## [Coding Challenge](https://github.com/EmmaBurkett/CSE212-final-project/blob/main/coding_challenges/dice_set.py): 
-Right now the check_uniqueness method gives a point for every additional
+Right now the check_uniqueness() method gives a point for every additional
 die with the same number - so if you rolled four 5's it would award the
-user with 3 points. Alter the check_uniqueness method so it awards one point
+user with 3 points. Alter the check_uniqueness() method so it awards one point
 for each pair of duplicate dice. Ex. if you rolled four 5's it would 
 give the user 2 points. 
 
 You cannot use a counter to solve this problem. 
 #### [Solution](https://github.com/EmmaBurkett/CSE212-final-project/blob/main/coding_challenges/Answers/dice_set_answer.py)
+
 
 

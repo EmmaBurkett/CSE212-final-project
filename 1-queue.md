@@ -1,6 +1,6 @@
 # Queue
 ## What is it?
-A queue is method of access to a data structure's data. It's a similar concept to a stack but a queue removes elements from the front of the data structure instead of from the end of the data structure.
+A queue is a method of access to a data structure's data. It's a similar concept to a stack but a queue removes elements from the front of the data structure instead of from the end of the data structure.
 
 ## FIFO
 A queue is comparable to a line of people: If you're first in line you are the first served and the first removed from the line. This brings us to the fundamental idea behind queues:
@@ -21,16 +21,16 @@ size()        | Returns the size of the queue. | length = len(my_queue) | O(1)
 empty()       | Returns true if length of the queue is zero. | if len(my_queue) == 0: | O(1)
 
 ## Operation to Dequeue
-With an array the operation to dequeue the first element is O(n) time because
-each element following the first element has to move forward in the array to 
-fill the gap. Ex. the element in position 1 has to move to position 0.
+With an array, the operation to dequeue the first element is O(n) time because
+each element following the first element must move forward in the array to 
+fill the gap. Ex. the element in position 1 must move to position 0.
 
 ## Dice Game
 In the 30's Dice Game the player rolls six dice which are displayed
 from highest to lowest. The player must keep the highest die and then 
 decide if they want to keep the next highest die or re-roll all six dice.
 
-Pay close attention to the functions enqueue_dice and dequeue_dice.
+Pay close attention to the methods enqueue_dice() and dequeue_dice().
 
 ``` python
 import random
@@ -99,7 +99,7 @@ class DiceGame:
         print("You kept", first_die, "Your score is:", self.score)
     
     def get_user_input(self):
-        """"This method asks the user if they would like to 'pick up'
+        """This method asks the user if they would like to 'pick up'
             and more dice."""
 
         kept_die = input("Keep next die?(y/n) ")
@@ -125,10 +125,11 @@ first out.
 
 ## [Coding Challenge](https://github.com/EmmaBurkett/CSE212-final-project/blob/main/coding_challenges/dice_queue.py): 
 For an array dequeuing an element is an O(n) operation, which is rather slow! 
-This same program can be recreated with a linked list which has O(1) 
+This same program can be recreated with a linked list that has O(1) 
 performance operations for dequeue and enqueue. 
 
 Your challenge is to alter the enqueue_dice() and dequeue_dice() methods to use a linked list.
 
 #### [Solution](https://github.com/EmmaBurkett/CSE212-final-project/blob/main/coding_challenges/Answers/dice_queue_answer.py)
+
 
