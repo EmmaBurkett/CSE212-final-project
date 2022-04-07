@@ -1,9 +1,8 @@
 # Tree
-## What is it?
-This is a tree:
 
 ![My image file](https://github.com/EmmaBurkett/CSE212-final-project/blob/main/hidden_files/Capture.PNG)
 
+## What is it?
 A binary tree is a data structure made up of instances of a class which are connected like a linked list. The difference between a tree and a linked list is that each node can point to two new nodes, and does not point to the previous node. 
 
 ## Binary Search Tree
