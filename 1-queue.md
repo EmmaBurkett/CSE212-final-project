@@ -125,7 +125,7 @@ For an array dequeuing an element is an O(n) operation, which is rather slow!
 This same program can be recreated with a linked list which has O(1) 
 performance operations for dequeue and enqueue. 
 
-Your challenge is to alter the enqueue_dice and dequeue_dice methods to use a linked list.
+Your challenge is to alter the enqueue_dice() and dequeue_dice() methods to use a linked list.
 
 #### [Solution](https://github.com/EmmaBurkett/CSE212-final-project/blob/main/coding_challenges/Answers/dice_queue_answer.py)
 
