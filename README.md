@@ -1,4 +1,17 @@
 # CSE212-final-project
 
+Hello student! 
 
-# notes: queue efficency is based on the data structure like an array makes O(n) but a linked list makes O(1) for deleting the front person. can make example problem for this mush some things together kind of backwards instead of forwards like we did in class to be fun. 
+       This is my final project for CSE212. I will describe the following data structures:
+* [Queue](1-queue.md)
+* [Set](2-set.md)
+* [Tree](3-tree.md)
+
+    For each data structure I will include a description, a few python operations, a coding example, and a challange.See my [outline](outline.md) for specifics. 
+
+Sincerly,
+
+Emma Burkett
+
+bur20089@byui.edu
+
