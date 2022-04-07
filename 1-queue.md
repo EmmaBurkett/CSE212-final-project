@@ -22,7 +22,8 @@ empty()       | Returns true if length of the queue is zero. | if len(my_queue) 
 
 ## Operation to Dequeue
 With an array the operation to dequeue the first element is O(n) time because
-the 
+each element following the first element has to move forward in the array to 
+fill the gap. Ex. the element in position 1 has to move to position 0.
 
 ## Dice Game
 In the 30's Dice Game the player rolls six dice which are displayed
