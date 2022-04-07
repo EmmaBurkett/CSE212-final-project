@@ -49,127 +49,101 @@ height(node) | Determine the height of a node. If the height of the tree is need
 size() | Return the size of the BST | O(1) - The size is maintained withint the BST class. 
 empty() | Returns true if the root node is empty. This can also be done by checking the size for 0. | O(1) - The comparison of the root node or the size.
 
-## Dice Game
-In the 30's dice game if the player rolls two of the same number they
-get a point. 
-
-Using the previous tutorial's code we have added a new method: check _uniqueness
+## To-Do List:
+This algorithm will take my to-do list, and create a Binary Search Tree based on how long each task will take me. Then it will print out my to_do list. 
 
 ``` python
-import random
-class DiceGame:
+class ToDoList:
+
+    class Task:
+        def __init__(self, task, duration):
+            self.left = None
+            self.right = None
+            self.task = task
+            self.duration = duration
+    
     def __init__(self):
-        self.dice = []
-        self.score = 0
+        self.root = None
+
+    def create_task(self, task, duration, node):
+        """ This method searches the current tree to find an empty 
+            location for the specific node. If the specific
+            node's duration is smaller place the task to the left of 
+            the current node. This method does not allow for nodes with
+            identic durations. 
+        """
+        # If duration < node.duration then the task belongs on the left side.
+        if duration < node.duration:
+
+            # If there is an empty spot fill that spot with a task.
+            if node.left is None:
+
+                # The only connection you need to make betweeen a node 
+                # on the tree to a new_node is a pointer to the new node
+                # from the node. The new node does not point back to 
+                # the previous node.
+                node.left = self.Task(task, duration)
+            else:
+
+                # Recur to the left and check for open spots. 
+                self.create_task(task, duration, node.left)
+        elif duration != node.duration:
+
+            # The data belongs on the right side.
+            if node.right is None:
+
+                # Fill the empty spot!
+                node.right = self.Task(task, duration)
+            else:
+
+                # Recur to the right and check for open spots.
+                self.create_task(task, duration, node.right)
     
-    def start_game(self):
-        self.new_roll()
-        self.get_user_input()
-    
-    def new_roll(self):
+    def display_tree(self, node):
+        """The method recurs until it reaches the right most node. 
+           After it has reached the right-most node it will print the 
+           task then check if there is a node to the left of the 
+           right-most node. If there is a node to the left, then the 
+           function recurs, does the same check for the right of this 
+           new node, and then prints the node. 
+        """
+        # Iterate through every node!
+        if node is not None:
 
-        # Append new values to the array.
-        self.enqueue_dice()
+            # Recure this function all the way to the right most node
+            # before printing.
+            # Check the right of the current node.
+            self.display_tree(node.right)
 
-        # Add points if there are two of the same number dice. 
-        self.check_uniqueness()
+            # Print current node's task.
+            print(node.task)
 
-        # Sort the array.
-        self.sort_dice()
+            # Check to the left of the current node.
+            self.display_tree(node.left)
 
-        # Display the array.
-        self.display_dice()
+to_do = ToDoList()
+to_do.root = to_do.Task("Clean room", 5)
+to_do.create_task("Mini-assignment", 20, to_do.root)
+to_do.create_task("Make food", 60, to_do.root)
+to_do.create_task("Laundry", 75, to_do.root)
+to_do.create_task("Help roommate", 30, to_do.root)
+to_do.create_task("Assignment", 120, to_do.root)
+to_do.create_task("Final", 180, to_do.root)
+to_do.create_task("Sharpen Pencil", 2, to_do.root)
+to_do.create_task("Update Computer", 100, to_do.root)
+to_do.create_task("Dust", 10, to_do.root)
+to_do.create_task("Large Assignment", 150, to_do.root)
 
-        # Dequeue an element on the array.
-        self.dequeue_dice()
-
-        # Display the array.
-        self.display_dice()
-
-    def enqueue_dice(self):
-        """This method 'rolls' the dice."""
-
-        # Enqueue a value to an array:
-        for i in range(6):
-            self.dice.append(random.randint(1,6))
-    
-    def sort_dice(self):
-        """This method sorts the dice."""
-
-        for i in range(6):
-            for j in range(i, 6):
-                if self.dice[i] < self.dice[j]:
-                    switch = self.dice[i]
-                    self.dice[i] = self.dice[j]
-                    self.dice[j] = switch
-
-    def display_dice(self):
-        """This method displays the dice to the user."""
-
-        print(*self.dice, sep=", ")
-
-    def dequeue_dice(self):
-        """This method 'picks up' the highest die and displays it.
-           It also updates the users score and displays it."""
-
-        # Check if array is empty with the common queue operation empty() 
-        if len(self.dice) == 0:
-            print("No dice!")
-            self.start_game()
-            return
-
-        # Dequeue() the first die in the array and display to the user.
-        first_die = self.dice.pop(0)
-
-        self.score += first_die
-        print("You kept", first_die, "Your score is:", self.score)
-    
-    def get_user_input(self):
-        """"This method asks the user if they would like to 'pick up'
-            and more dice."""
-
-        kept_die = input("Keep next die?(y/n) ")
-        if kept_die == "y":
-            self.dequeue_dice()
-            self.display_dice()
-            self.get_user_input()
-        elif kept_die == "n":
-            self.dice = []
-            self.start_game()
-        else:
-            print("enter a y or a n")
-            self.get_user_input(self)
-
-    def check_uniqueness(self):
-
-        # Initialize the set.
-        my_set = set()
-
-        # Loop through the array.
-        for die in self.dice:
-
-            # Check if the die is in the set - O(1) operation.
-            if die in my_set:
-
-                # If die in set then add a point to the score
-                self.score += 1
-            
-            # Add die after checking if the value is in set.
-            my_set.add(die)
-        
-
-game = DiceGame()
-game.start_game()
+to_do.display_tree(to_do.root)
 ```
-## Coding with sets
-In the check_uniqueness method we turned an array into a set. This helped us
-to check the dice for uniqueness in O(1) time. This is a huge advantage over
-arrays as ``` If die in array ``` is O(n) time. 
 
+## [Coding Challenge](): 
+As a student I often find myself asking the question 'what can I get done in the time that I have?' Sometimes I have five minutes and I pick up my room, sometimes I have 6 hours and I work through a few of my larger assignments. 
 
-## Coding Challenge: 
-Alter the check_uniqueness method to ingnore a third or fourth duplicate dice
-by using chaining. 
+Your challenge will be to add an additional method that returns the largest task
+that I can complete in the time I have left. 
+
+#### [Solution]()
 
 
 ###### Vocabulary
