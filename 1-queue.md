@@ -16,7 +16,7 @@ stack. This can include things like handling phone calls.
 Operation     | Description       | Python Code | Performance 
 --------------|-------------------|-------------|-------------
 Enqueue(value)| Adds value to the back of the queue    | my_queue.append(value)   | O(1)
-Dequeue()     | Remove and return the first item from the front of the queue.     | value = my_queue[0] or value = my_queue.pop(0)   | O(n)
+Dequeue()     | Remove and return the first item from the front of the queue.     | value = my_queue[0] or value = my_queue.pop(0)   | O(n) with a dynamic array. O(1) with a linked list.
 size()        | Returns the size of the queue. | length = len(my_queue) | O(1)
 empty()       | Returns true if length of the queue is zero. | if len(my_queue) == 0: | O(1)
 
