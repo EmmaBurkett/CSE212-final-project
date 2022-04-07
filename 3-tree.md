@@ -24,7 +24,7 @@ Because a Binary Search tree can have a height equal to its number of nodes it c
 ![My image file](https://github.com/EmmaBurkett/CSE212-final-project/blob/main/hidden_files/image.PNG)
 
 ## Searching by O(log n)
-Observe the image above. It's subtrees are of equal height, therefor it is a balanced binary search tree. If you wanted to find the node containing the value 6 you would start at the root of the tree, 5, and you would compare 5 to 6. 6 is greater than 5 so you would look to the right, eliminating all the values on the left of 5. Next you would compare 6 to 8. 6 is less than 8 so you would look to the left node, eliminating all the values on the right of 8. The final comparison, 6 vs. 7, shows that 6 is not in the tree at all. 
+In the image above, its subtrees are of equal height, therefore it is a balanced binary search tree. To find the node containing the value 6, start at the root of the tree, 5, and compare 5 to 6. 6 is greater than 5 so look to the right next, this eliminates all the values on the left of 5. Next compare 6 to 8. 6 is less than 8 so look to the left node, this eliminates all the values on the right of 8. The final comparison, 6 vs. 7, shows that 6 is not in the tree at all. 
 
 Note that every time we compared with a new node we halfed the amount of nodes that we needed to go through to find the node containing 6. This is the definiton of O(log n). 
 
