@@ -29,9 +29,9 @@ In the image above, its subtrees are of equal height, therefore it is a balanced
 Note that every time we compared two nodes we halved the remaining nodes that we need to search through to find 6. This is the defenition of O(log n). 
 
 ## Recursion
-Because each node only points to child nodes and not its parent node, it is necessary to use recursion to move backwards on the tree. To print out a BST from largest to smallest, to the right-most node and print out that node then the one above it. Recursion points to the root node and then recurs the method for the node to the right of the root. Once it has printed out the right node, then that instance
+Because each node only points to child nodes and not its parent node, it is necessary to use recursion to move backwards on the tree. To print out a BST from largest to smallest, to the right-most node and print out that node then the one above it. Recursion points to the root node and then recurs the method for the node to the right of the root. Once it has printed out the right node, then that instance of the method ends and the original recur is returned to and the root node is printed out. 
 
-It is impossible to do this with a FOR loop because when we move to the right-most node we don't have any connections to the node above it.
+It is impossible to do this with a FOR loop because when we move to the right node we don't have any connections to the root node.
 
 
 ## Operation Performance for a Balanced Binary Search Tree
