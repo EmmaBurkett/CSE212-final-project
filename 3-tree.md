@@ -136,13 +136,13 @@ to_do.create_task("Large Assignment", 150, to_do.root)
 to_do.display_tree(to_do.root)
 ```
 
-## [Coding Challenge](): 
+## [Coding Challenge](https://github.com/EmmaBurkett/CSE212-final-project/blob/main/coding_challenges/to_do_tree.py): 
 As a student I often find myself asking the question 'what can I get done in the time that I have?' Sometimes I have five minutes and I pick up my room, sometimes I have 6 hours and I work through a few of my larger assignments. 
 
 Your challenge will be to add an additional method that returns the largest task
 that I can complete in the time I have left. 
 
-#### [Solution]()
+#### [Solution](https://github.com/EmmaBurkett/CSE212-final-project/blob/main/coding_challenges/Answers/to_do_tree_answer.py)
 
 
 ###### Vocabulary
