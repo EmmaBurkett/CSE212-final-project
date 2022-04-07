@@ -24,15 +24,14 @@ Because a Binary Search tree can have a height equal to its number of nodes it c
 ![My image file](https://github.com/EmmaBurkett/CSE212-final-project/blob/main/hidden_files/image.PNG)
 
 ## Searching by O(log n)
-In the image above, its subtrees are of equal height, therefore it is a balanced binary search tree. To find the node containing the value 6, start at the root of the tree, 5, and compare 5 to 6. 6 is greater than 5 so look to the right next, this eliminates all the values on the left of 5. Next compare 6 to 8. 6 is less than 8 so look to the left node, this eliminates all the values on the right of 8. The final comparison, 6 vs. 7, shows that 6 is not in the tree at all. 
+In the image above, its subtrees are of equal height, therefore it is a balanced binary search tree. To find the node containing the value 6, start at the root of the tree, 5, and compare 5 to 6. 6 is greater than 5 so look to the right next; this eliminates all the values on the left of 5. Next compare 6 to 8. 6 is less than 8 so look to the left node; this eliminates all the values on the right of 8. The final comparison, 6 vs. 7, shows that 6 is not in the tree at all. 
 
-Note that every time we compared with a new node we halfed the amount of nodes that we needed to go through to find the node containing 6. This is the definiton of O(log n). 
+Note that every time we compared two nodes we halved the remaining nodes that we need to search through to find 6. This is the defenition of O(log n). 
 
 ## Recursion
 Because each node only points to the next nodes and not the one before it is necessary to use recursion to move backwards on the tree. When we want to print out a BST from largest to smallest we have to go to the right-most node and print out that node then the one above it. 
 
-If we were to try to do this with a FOR loop then when we move to the right most node we don't have any connections to the node above it. 
-
+If we were to try to do this with a FOR loop then when we move to the right most node we don't have any connections to the node above it. Recursion points to the root node and then recurs to 
 
 
 ## Operation Performance for a Balanced Binary Search Tree
