@@ -20,10 +20,12 @@ Dequeue()     | Remove and return the first item from the front of the queue.   
 size()        | Returns the size of the queue. | length = len(my_queue) | O(1)
 empty()       | Returns true if length of the queue is zero. | if len(my_queue) == 0: | O(1)
 
-## Add operation desciptions here.
+## Operation to Dequeue
+With an array the operation to dequeue the first element is O(n) time because
+the 
 
 ## Dice Game
-In the 30's dice game the player rolls six dice which are displayed
+In the 30's Dice Game the player rolls six dice which are displayed
 from highest to lowest. The player must keep the highest die and then 
 decide if they want to keep the next highest die or re-roll all six dice.
 
