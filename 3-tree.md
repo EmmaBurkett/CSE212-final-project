@@ -19,7 +19,7 @@ Note:
 Unlike a linked list, a tree does not store its tail(s) in another class. That means that to access each tail you need to iterate through the nodes above it which can give O(1) time to O(n) time. 
 
 ## Balanced Binary Search Trees
-Because a Binary Search tree can have a height equal to it's number of nodes it can take O(n) time to get to the node on the end. If the tree is 'balanced' or the height of any two subtrees is reasonably similar then it only takes O(log n) time to access the nodes on the end or to find a specific node. 
+Because a Binary Search tree can have a height equal to its number of nodes it can take O(n) time to get to the node on the end. If the tree is 'balanced' or the height of any two subtrees is reasonably similar then it only takes O(log n) time to access the nodes on the end or to find a specific node. 
 
 ![My image file](https://github.com/EmmaBurkett/CSE212-final-project/blob/main/hidden_files/image.PNG)
 
