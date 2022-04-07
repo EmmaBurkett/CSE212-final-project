@@ -6,7 +6,7 @@
 A binary tree is a data structure made up of instances of a class which are connected like a linked list. The difference between a tree and a linked list is that each node can point to two new nodes, and does not point to the previous node. 
 
 ## Binary Search Tree
-A binary serach tree is specific in how it links together. Observe the image above. Nodes with values 3 and 5 point to two new nodes. In both cases the node with the larger value is placed on the right of the current node (6 is to the right of 5), and the node with the smaller value is placed on the left of the current node (4 is to the left of 5).
+A binary search tree is specific in how it links together. Observe the image above. Nodes with values 3 and 5 point to two new nodes. In both cases the node with the larger value is placed on the right of the current node (6 is to the right of 5), and the node with the smaller value is placed on the left of the current node (4 is to the left of 5).
 
 Another integral part of a BST is that a number greater than the current node cannot be placed left of the tree and a number less than the current node cannot be place on the right of the tree. 
 

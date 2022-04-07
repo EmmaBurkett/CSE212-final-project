@@ -30,7 +30,7 @@ print(add)
 
 ### Hashing
 Sometimes we want to store things in a set that are not numerical, like
-a string. We can do this by hashing it. The operator hash("value") will convert the string into an integer and store the string in the location of the returned integer. The integer assigned to the first hash is random and the subsequent hashes remain consistant with the first hash. 
+a string. We can do this by hashing it. The operator hash("value") will convert the string into an integer and store the string in the location of the returned integer. The integer assigned to the first hash is random and subsequent hashes remain consistant with the first hash. 
 
 ## Practical Application
 Sets can be used to verify uniquness which can be useful if you have a 
@@ -50,7 +50,7 @@ member(value)        | Determines if value is in the set | if value in my_set | 
 size()       | Returns the number of items in the set | length = len(my_set) | O(1)
 
 ## Dice Game
-In the 30's dice game if the player rolls two of the same number they
+In the 30's Dice Game if the player rolls two of the same number they
 get a point. 
 
 Using the queue tutorial's code we have added a new method: check _uniqueness
