@@ -1,9 +1,9 @@
 # Set
 ## What is it?
 A set is an ordered list. In an array, elements are appended to the end, the middle, or the beginning. With sets, elements
-are added to the location on the array that they represent. For example,
-if you want to add 5 to a set you would do this: my_set[5] = 5
-Note that the index matches the value of the element. 
+are added to the data structure with the index equal to their value. For example,
+adding a 5 to your set would store the value at the index 5: my_set[5] = 5
+The index equals the value of the element you want to store.
 
 ### Example:
 ``` python
