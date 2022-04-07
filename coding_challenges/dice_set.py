@@ -83,9 +83,9 @@ class DiceGame:
             self.get_user_input(self)
 
     def check_uniqueness(self):
-        """Right now the check_uniqueness method gives a point for every additional
+        """Right now, the check_uniqueness() method gives a point for every additional
            die with the same number - so if you rolled four 5's it would award the
-           user with 3 points.  Alter the check_uniqueness method so it awards one point
+           user with 3 points.  Alter the check_uniqueness() method so it awards one point
            for each pair of duplicate dice.  Ex. if you rolled four 5's it would 
            give the user 2 points. 
         """
@@ -119,3 +119,4 @@ class DiceGame:
 
 game = DiceGame()
 game.start_game()
+

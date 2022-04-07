@@ -96,7 +96,6 @@ class DiceGame:
                     node = node.next
                 
 
-
     def display_dice(self):
         """This method displays the dice to the user."""
         node = self.head
@@ -107,7 +106,7 @@ class DiceGame:
 
     def dequeue_dice(self):
         """This method 'picks up' the highest die and displays it.
-           It also updates the users score and displays it."""
+           It also updates the user’s score and displays it."""
 
         # Check if array is empty with the common queue operation empty() 
         if self.head is None:
@@ -144,3 +143,4 @@ class DiceGame:
 
 game = DiceGame()
 game.start_game()
+

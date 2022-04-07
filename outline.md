@@ -33,10 +33,11 @@
 * Balanced binary search tree
 * Searching by O(log n)
 * Recursion
-* Operation Perfomance
+* Operation Performance
 * Example
     * To-Do list
 * Problem to Solve
     * To-Do list print a task
 * Vocabulary
+
 
