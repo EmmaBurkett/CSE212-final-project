@@ -7,7 +7,7 @@ Hello student!
 * [Set](2-set.md)
 * [Tree](3-tree.md)
 
-    For each data structure I will include a description, a few python operations, a coding example, and a challange.See my [outline](outline.md) for specifics. 
+    For each data structure I will include a description, a few python operations, a coding example, and a challange. See my [outline](outline.md) for specifics. 
 
 Sincerly,
 
