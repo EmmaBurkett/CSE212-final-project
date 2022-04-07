@@ -39,13 +39,24 @@ class DiceGame:
 
     def enqueue_dice(self):
         """This method is ment to enqueue 6 nodes starting with self.head"""
+
+        # Initialize the head
         node = self.Die()
         self.head = node
 
+        # Create 5 new nodes.
         for i in range(5):
+
+            # Create a node to go on the right.
             right_node = self.Die()
+
+            # Point the current node's next attribute to the right_node.
             node.next = right_node
+
+            # Point the right_node's prev attribute to the current node.
             right_node.prev = node
+
+            # Set the right node to the new node.
             node = right_node
 
     
