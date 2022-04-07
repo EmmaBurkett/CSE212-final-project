@@ -1,6 +1,6 @@
 # Queue
 ## What is it?
-A queue can be the same data structure as a stack except its data is accessed differently. A stack removes elements from the back of the data structure whereas a queue removes elements from the front of the data structure.
+A queue is method of access to a data structure's data. It's a similar concept to a stack but a queue removes elements from the front of the data structure instead of from the end of the data structure.
 
 ## FIFO
 A queue is comparable to a line of people: If you're first in line you are the first served and the first removed from the line. This brings us to the fundamental idea behind queues:
