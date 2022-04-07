@@ -1,45 +1,16 @@
-# Header Line Level 1
-## level two
-### level three
+# CSE212-final-project
 
-regular text
+Hello student! 
 
-# Main section
-# Stack
-- Item 1
-    - another Item
-    - third thing
-1. first thing
-2. second thing
-4. third thing
-1. fourth thing
+       This is my final project for CSE212. I will describe the following data structures:
+* [Queue](1-queue.md)
+* [Set](2-set.md)
+* [Tree](3-tree.md)
 
-paragraph and it will keep formatting in the same paragraph
+    For each data structure I will include a description, a few python operations, a coding example, and a challange.See my [outline](outline.md) for specifics. 
 
-Here's a link to the starting page [Link](0-welcome-old.md)
+Sincerly,
 
-Links to external sites[google](https://google.com)
+Emma Burkett
 
-My image is:
-![My image file] (https://myoctocat.com/assets/... ) - No spaces only %20s 
-
-# Linked List
-### Introduction
-
-Operation   | Description       | Efficiency 
-------------|-------------------|-------------
-Enqueue     |                   | O(1)
-Dequeue     |                   | O(1)
-
-
-> This is a nice quote by Brother Kay
-
-
-` print("This is a single line of code")`
-
-``` python
-def is_end_maze(self, x, y):
-    print(f"this is a function!{x} and {y}")
-```
-# Tree
-### Introduction
+bur20089@byui.edu

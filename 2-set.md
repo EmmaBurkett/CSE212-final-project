@@ -9,7 +9,9 @@ Note that the index matches the value of the element.
 ### Example:
 ``` python
 array = [1,4,3]
-my_set = [None, 1, None, 3, 4,] # Sets can be called a sparse list because parts of the set are not always filled.
+my_set = [None, 1, None, 3, 4,] 
+# Sets can be called a sparse list because parts of the set are not 
+# always filled.
 ```
 
 ### Advantages
