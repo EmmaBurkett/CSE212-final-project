@@ -1,6 +1,6 @@
 # Set
 ## What is it?
-A set is an ordered list. In an array, elements are appended to the end, the middle or the beginning. With sets, elements
+A set is an ordered list. In an array, elements are appended to the end, the middle, or the beginning. With sets, elements
 are added to the location on the array that they represent. For example,
 if you want to add 5 to a set you would do this: my_set[5] = 5
 Note that the index matches the value of the element. 
