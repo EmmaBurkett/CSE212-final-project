@@ -115,8 +115,8 @@ game = DiceGame()
 game.start_game()
 ```
 ## Coding with Queues
-The enqueue_dice method appends new values to the dice array with a
-performance of O(1). The dequeue_dice method removes dice from the 
+The enqueue_dice() method appends new values to the dice array with a
+performance of O(1). The dequeue_dice() method removes dice from the 
 beginning of the array - which is the definition of a queue, first in;
 first out.
 
