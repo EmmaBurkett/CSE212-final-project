@@ -25,7 +25,7 @@ empty()       | Returns true if length of the queue is zero. | if len(my_queue) 
 ## Dice Game
 In the 30's dice game the player rolls six dice which are displayed
 from highest to lowest. The player must keep the highest die and then 
-decide if they want to keep the next highest die. 
+decide if they want to keep the next highest die or re-roll all six dice.
 
 Pay close attention to the functions enqueue_dice and dequeue_dice.
 
