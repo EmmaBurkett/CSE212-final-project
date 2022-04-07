@@ -121,7 +121,7 @@ beginning of the array - which is the definition of a queue, first in;
 first out.
 
 ## [Coding Challenge](https://github.com/EmmaBurkett/CSE212-final-project/blob/main/coding_challenges/dice_queue.py): 
-For an array dequeuing an element is an O(n) operation, rather slow! 
+For an array dequeuing an element is an O(n) operation, which is rather slow! 
 This same program can be recreated with a linked list which has O(1) 
 performance operations for dequeue and enqueue. 
 
