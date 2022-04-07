@@ -6,12 +6,14 @@
 * Contact
 
 #### [<span style="color:Pink"><b>II. QUEUE </span>](1-queue.md)
-* Introduction
+* What is it?
 * FIFO
 * Practical Application
+* Operation Performance
 * Example
-    * Return a list of food to be eaten first based on purchase date
+    * Dice Game
 * Problem to Solve
+    * Dice game as linked list
 
 #### [<span style="color:Pink"><b>III. SET </span>](2-set.md)
 * Introduction
