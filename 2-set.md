@@ -29,8 +29,8 @@ print(add)
 ```
 
 ### Hashing
-Sometimes we want to store things in a set that are not numberical, like
-a string. We can do this by hashing it. The operator hash("value") will convert the string into an integer so that it can be stored in the proper location in the set. The integer assigned to the first hash is random and the subsequent hashes remain consistant with the first hash. 
+Sometimes we want to store things in a set that are not numerical, like
+a string. We can do this by hashing it. The operator hash("value") will convert the string into an integer and store the string in the location of the returned integer. The integer assigned to the first hash is random and the subsequent hashes remain consistant with the first hash. 
 
 ## Practical Application
 Sets can be used to verify uniquness which can be useful if you have a 
