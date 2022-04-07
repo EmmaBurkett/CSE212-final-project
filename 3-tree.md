@@ -29,9 +29,9 @@ In the image above, its subtrees are of equal height, therefore it is a balanced
 Note that every time we compared two nodes we halved the remaining nodes that we need to search through to find 6. This is the defenition of O(log n). 
 
 ## Recursion
-Because each parent node only points to its children nodes and not its parent node it is necessary to use recursion to move backwards on the tree. When we want to print out a BST from largest to smallest we have to go to the right-most node and print out that node then the one above it. 
+Because each node only points to child nodes and not its parent node, it is necessary to use recursion to move backwards on the tree. To print out a BST from largest to smallest, to the right-most node and print out that node then the one above it. Recursion points to the root node and then recurs the method for the node to the right of the root. Once it has printed out the right node, then that instance
 
-If we were to try to do this with a FOR loop then when we move to the right most node we don't have any connections to the node above it. Recursion points to the root node and then recurs to 
+It is impossible to do this with a FOR loop because when we move to the right-most node we don't have any connections to the node above it.
 
 
 ## Operation Performance for a Balanced Binary Search Tree
@@ -44,7 +44,7 @@ contains(value) | Determines if value is in the tree | O(log n) - Recursively se
 traverse_forward | Visit all objects from smallest to largest | O(n) - Recursively traverse the left subtree and then the right subtree. 
 traverse_reverse | Visit all objects from larges to smallest | O(n) - Recursively traverse the right subtree and then the left subtree.
 height(node) | Determine the height of a node. If the height of the tree is needed, the root node is provided. | O(n) - Recursively traverse the right subtree and then the left subtree.
-size() | Return the size of the BST | O(1) - The size is maintained withint the BST class. 
+size() | Return the size of the BST | O(1) - The size is maintained within the BST class. 
 empty() | Returns true if the root node is empty. This can also be done by checking the size for 0. | O(1) - The comparison of the root node or the size.
 
 ## To-Do List:
@@ -68,7 +68,7 @@ class ToDoList:
             location for the specific node. If the specific
             node's duration is smaller place the task to the left of 
             the current node. This method does not allow for nodes with
-            identic durations. 
+            identical durations. 
         """
         # If duration < node.duration then the task belongs on the left side.
         if duration < node.duration:
@@ -98,7 +98,7 @@ class ToDoList:
                 self.create_task(task, duration, node.right)
     
     def display_tree(self, node):
-        """The method recurs until it reaches the right most node. 
+        """The method recurs until it reaches the right-most node. 
            After it has reached the right-most node it will print the 
            task then check if there is a node to the left of the 
            right-most node. If there is a node to the left, then the 
@@ -108,7 +108,7 @@ class ToDoList:
         # Iterate through every node!
         if node is not None:
 
-            # Recure this function all the way to the right most node
+            # Recure this function all the way to the right-most node
             # before printing.
             # Check the right of the current node.
             self.display_tree(node.right)
@@ -138,8 +138,7 @@ to_do.display_tree(to_do.root)
 ## [Coding Challenge](https://github.com/EmmaBurkett/CSE212-final-project/blob/main/coding_challenges/to_do_tree.py): 
 As a student I often find myself asking the question 'what can I get done in the time that I have?' Sometimes I have five minutes and I pick up my room, sometimes I have 6 hours and I work through a few of my larger assignments. 
 
-Your challenge will be to add an additional method that returns the largest task
-that I can complete in the time I have left. 
+Your challenge is to add an additional method that returns the largest task which can be completed in the time given. 
 
 #### [Solution](https://github.com/EmmaBurkett/CSE212-final-project/blob/main/coding_challenges/Answers/to_do_tree_answer.py)
 
